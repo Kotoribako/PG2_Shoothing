@@ -139,12 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletsSpawner.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="GameMainScene.cpp" />
+    <ClCompile Include="NwaySpawner.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SphereCollider.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletsSpawner.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameMainScene.h" />
+    <ClInclude Include="NwaySpawner.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SphereCollider.h" />
