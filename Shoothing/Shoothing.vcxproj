@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameMainScene.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="SphereCollider.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameMainScene.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SphereCollider.h" />
   </ItemGroup>
