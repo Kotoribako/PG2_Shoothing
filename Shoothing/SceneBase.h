@@ -6,7 +6,7 @@ private:
 
 public:
 
-    Update() = 0;
-    Draw() = 0 const;
+    virtual void Update() = 0;
+    virtual void Draw() = 0; const;
 
 };

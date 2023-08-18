@@ -8,6 +8,6 @@ private:
 	int angleDiff;
 
 public:
-	void Shoot()override;
+	virtual void Shoot()override;
 
 };
