@@ -144,7 +144,6 @@
     <ClCompile Include="CharaBase.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="GameMainScene.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="NwaySpawner.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SphereCollider.cpp" />
