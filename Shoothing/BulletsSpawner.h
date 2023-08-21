@@ -1,6 +1,7 @@
 #pragma once
+#include "NwaySpawner.h"
 
-class BulletsSpawner
+class BulletsSpawner: public NwaySpawner
 {
 private:
 	int speed;
@@ -9,6 +10,6 @@ private:
 
 public:
 
-	void Shoot();
+	virtual void Shoot();
 
 };

@@ -1,6 +1,7 @@
 #pragma once
+#include "SphereCollider.h"
 
-class CharaBase
+class CharaBase: public SphereCollider
 {
 private:
 
@@ -11,9 +12,9 @@ public:
 	CharaBase();
 	~CharaBase();
 
-	void Update();
-	void Draw();
-	void Hit();
+	virtual void Update();
+	virtual void Draw();
+	virtual void Hit();
 
 };
 

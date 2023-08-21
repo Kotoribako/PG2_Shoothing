@@ -1,6 +1,7 @@
 #pragma once
+#include "CharaBase.h"
 
-class Enemy
+class Enemy : public CharaBase
 {
 private:
 

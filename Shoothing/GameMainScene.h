@@ -1,7 +1,7 @@
 #pragma once
 #include "SceneBase.h"
 
-class GameMainScene
+class GameMainScene: SceneBase
 {
 private:
 	int player;

@@ -1,6 +1,7 @@
 #pragma once
+#include "SphereCollider.h"
 
-class Bullet
+class Bullet : public SphereCollider
 {
 private:
 
@@ -10,8 +11,8 @@ private:
 	int angulVelocity;
 
 public:
-	void Update()override;
-	void Draw() override;
-	void GetDamage()override;
+	void Update();
+	void Draw();
+	void GetDamage();
 
 };
