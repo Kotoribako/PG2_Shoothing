@@ -1,6 +1,7 @@
 #pragma once
+#include "BulletsSpawner.h"
 
-class NwaySpawner
+class NwaySpawner: public BulletsSpawner
 {
 private:
 	int numBullet;
