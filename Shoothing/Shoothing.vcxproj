@@ -144,18 +144,22 @@
     <ClCompile Include="CharaBase.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="GameMainScene.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="NwaySpawner.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SphereCollider.cpp" />
     <ClCompile Include="Title.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="BulletsSpawner.h" />
     <ClInclude Include="CharaBase.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="FPS.h" />
     <ClInclude Include="GameMainScene.h" />
     <ClInclude Include="NwaySpawner.h" />
+    <ClInclude Include="PadInput.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SphereCollider.h" />

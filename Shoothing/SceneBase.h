@@ -1,5 +1,6 @@
 #pragma once
 
+
 class SceneBase
 {
 private:
@@ -7,6 +8,6 @@ private:
 public:
 
     virtual void Update() = 0;
-    virtual void Draw() = 0; const;
+    virtual void Draw()= 0;
         
 };
