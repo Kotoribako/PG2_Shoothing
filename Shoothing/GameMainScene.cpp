@@ -11,12 +11,12 @@ void GameMainScene::SpawnBullet()
 
 }
 
-void GameMainScene::Update()
+SceneBase* GameMainScene::Update()
 {
-
+	return this;
 }
 
-void GameMainScene::Draw()
+void GameMainScene::Draw()const
 {
 	DrawFormatString(100, 100, 0xffffff, "ƒQ[ƒ€ƒƒCƒ“‰æ–Ê");
 }

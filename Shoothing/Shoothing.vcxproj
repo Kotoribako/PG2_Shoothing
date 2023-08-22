@@ -147,6 +147,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NwaySpawner.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SphereCollider.cpp" />
     <ClCompile Include="Title.cpp" />
   </ItemGroup>
@@ -161,6 +162,7 @@
     <ClInclude Include="PadInput.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SceneBase.h" />
+    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SphereCollider.h" />
     <ClInclude Include="Title.h" />
   </ItemGroup>

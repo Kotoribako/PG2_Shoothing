@@ -18,6 +18,6 @@ public:
 
 	void SpawnBullet();  //弾の配列に新しくデータを作成する
 
-	void Update() override;
-	void Draw() override;
+    SceneBase* Update() override;
+	void Draw()const override;
 };
