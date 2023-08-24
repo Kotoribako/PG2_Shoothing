@@ -4,6 +4,8 @@
 class GameMainScene: SceneBase
 {
 private:
+	int PauseFlg;
+
 	int player;
 
 	int life;

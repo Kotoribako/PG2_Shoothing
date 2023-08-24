@@ -3,11 +3,12 @@
 #include "GameMainScene.h"
 #include "PadInput.h"
 #include "Title.h"
+#include "SceneManager.h"
 
 #define FRAMERATE 60.0 //フレームレート
 
-#define HEIGHT 640
-#define WIDTH 480
+#define HEIGHT 1280
+#define WIDTH 720
 #define REFRESHRATE 32
 
 // プログラムは WinMain から始まります
@@ -33,31 +34,30 @@ int WINAPI WinMain(_In_ HINSTANCE ih, _In_opt_ HINSTANCE ioh, _In_ LPSTR il, _In
 
 	SetDrawScreen(DX_SCREEN_BACK);	// 描画先画面を裏にする
 
+	//SceneManager sceneMng(dynamic_cast<SceneBase*>(new Title()));;
 	Fps fps;
 
 	while ((ProcessMessage() == 0))
 	{
 
 		ClearDrawScreen();		// 画面の初期化
-		PAD_INPUT::UpdateKey();
+		//PAD_INPUT::UpdateKey();
 
-		/*if (PAD_INPUT::OnButton(XINPUT_BUTTON_START))
-		{
-			GameMainScene::PauseFlg = !GameMainScene::PauseFlg;
+		/*sceneMng.Update();
 
-		}*/
+		sceneMng.Draw();*/
 
 		//強制終了
-		if (PAD_INPUT::OnButton(XINPUT_BUTTON_BACK))
+		/*if (PAD_INPUT::OnButton(XINPUT_BUTTON_BACK))
 		{
 			break;
-		}
+		}*/
 
 		// ESCでも終了
-		if (CheckHitKey(KEY_INPUT_ESCAPE))
+		/*if (CheckHitKey(KEY_INPUT_ESCAPE))
 		{
 			break;
-		}
+		}*/
 
 		//fps
 		fps.Update();	//更新

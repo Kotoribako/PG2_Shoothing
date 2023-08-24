@@ -4,6 +4,7 @@
 // ユーザーはこれを継承してシーンを実装すると楽
 
 class SceneBase {
+
 public:
     // デストラクタ
     virtual ~SceneBase() {}
