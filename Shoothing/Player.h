@@ -16,5 +16,4 @@ public:
 	void Draw() override;
 
 	void Hit()override;
-
 };

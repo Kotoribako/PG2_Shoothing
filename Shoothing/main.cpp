@@ -34,18 +34,16 @@ int WINAPI WinMain(_In_ HINSTANCE ih, _In_opt_ HINSTANCE ioh, _In_ LPSTR il, _In
 
 	SetDrawScreen(DX_SCREEN_BACK);	// •`‰ææ‰æ–Ê‚ğ— ‚É‚·‚é
 
-	//SceneManager sceneMng(dynamic_cast<SceneBase*>(new Title()));;
+	SceneManager sceneMng(dynamic_cast<SceneBase*>(new GameMainScene()));;
 	Fps fps;
 
-	while ((ProcessMessage() == 0))
+	while ((ProcessMessage() == 0) && (sceneMng.Update() != nullptr))
 	{
 
 		ClearDrawScreen();		// ‰æ–Ê‚Ì‰Šú‰»
 		//PAD_INPUT::UpdateKey();
 
-		/*sceneMng.Update();
-
-		sceneMng.Draw();*/
+		sceneMng.Draw();
 
 		//‹­§I—¹
 		/*if (PAD_INPUT::OnButton(XINPUT_BUTTON_BACK))

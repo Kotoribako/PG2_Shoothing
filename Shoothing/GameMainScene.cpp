@@ -1,6 +1,17 @@
 #include "DxLib.h"
 #include"GameMainScene.h"
 
+GameMainScene::GameMainScene()
+{
+	PLAYER = new Player();
+
+}
+
+GameMainScene::~GameMainScene()
+{
+	delete PLAYER;
+}
+
 void GameMainScene::HitCheck()
 {
 
@@ -18,5 +29,7 @@ SceneBase* GameMainScene::Update()
 
 void GameMainScene::Draw()const
 {
-	DrawFormatString(100, 100, 0xffffff, "ゲームメイン画面");
+	PLAYER->Draw();
+
+	DrawFormatString(0, 0, 0xffffff, "ゲームメイン画面");
 }
