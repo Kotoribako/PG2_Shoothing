@@ -17,6 +17,9 @@ Player::Player()
     P_Left_Btn = 0;
     P_A_Btn = 0;
 
+    P_Move_X = location.x;
+    P_Move_Y = location.y;
+
 }
 
 Player::~Player()
@@ -40,6 +43,9 @@ void Player::Update()
 
     // Bボタン長押し
     P_B_Btn = PAD_INPUT::OnPressed(XINPUT_BUTTON_B);
+
+    P_Move_X = location.x;
+    P_Move_Y = location.y;
 }
 
 void Player::Player_Init()
@@ -86,7 +92,7 @@ void Player::Draw() const
 {
 	//DrawString(200, 200, "プレイヤー", GetColor(255, 0, 0), TRUE);
 
-	DrawCircle(600, 650, 20, 0xffffff, TRUE);
+	DrawCircle(600, 250, 20, 0xffffff,  TRUE);
 }
 
 void Player::Hit()
