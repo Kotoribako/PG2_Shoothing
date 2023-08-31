@@ -100,19 +100,19 @@ public:
 		return ret;
 	}
 
-	////左スティックの取得 横軸値
-	//static short int GetLStickX()
-	//{
-	//	return l_stick.x;
-	//}
+	//左スティックの取得 横軸値
+	static short int GetLStickX()
+	{
+		return l_stick.x;
+	}
 
-	////左スティックの取得 縦軸値
-	//static short int GetLStickY()
-	//{
-	//	return l_stick.y;
-	//}
+	//左スティックの取得 縦軸値
+	static short int GetLStickY()
+	{
+		return l_stick.y;
+	}
 
-	/*static char GetOldKey(const int i)
+	static char GetOldKey(const int i)
 	{
 		return old_key[i];
 	}
@@ -120,6 +120,5 @@ public:
 	static char GetNowKey(const int i)
 	{
 		return now_key[i];
-	}*/
+	}
 };
-

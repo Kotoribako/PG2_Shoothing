@@ -146,6 +146,7 @@
     <ClCompile Include="GameMainScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NwaySpawner.cpp" />
+    <ClCompile Include="PadInput.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SphereCollider.cpp" />

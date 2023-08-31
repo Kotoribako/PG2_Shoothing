@@ -5,13 +5,17 @@ class Enemy : public CharaBase
 {
 private:
 
+	int enemy;
 	int hp;
 	int point;
 	int weapon;
 
 public:
 
-	void Update()override;
-	void Draw()override;
+	void Update();
+
+	void Draw() const;
+
 	void Hit()override;
+
 };

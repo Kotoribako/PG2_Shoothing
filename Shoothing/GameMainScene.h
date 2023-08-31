@@ -1,17 +1,12 @@
 #pragma once
 #include "SceneBase.h"
 #include "Player.h"
+#include "Enemy.h"
 
 class GameMainScene:public SceneBase
 {
 private:
 	int PauseFlg;
-
-	int player;
-
-	int life;
-
-	int enemy;
 
 	int bullet;
 
@@ -20,7 +15,8 @@ public:
 	GameMainScene();
 	~GameMainScene();
 
-	Player* PLAYER;
+	Player* player;
+	Enemy* enemy;
 	
 	void HitCheck();     //弾/プレイヤー/敵の当たり判定のチェックを行う
 

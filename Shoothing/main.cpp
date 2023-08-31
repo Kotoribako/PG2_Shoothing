@@ -52,10 +52,10 @@ int WINAPI WinMain(_In_ HINSTANCE ih, _In_opt_ HINSTANCE ioh, _In_ LPSTR il, _In
 		}*/
 
 		// ESCÇ≈Ç‡èIóπ
-		/*if (CheckHitKey(KEY_INPUT_ESCAPE))
+		if (CheckHitKey(KEY_INPUT_ESCAPE))
 		{
 			break;
-		}*/
+		}
 
 		//fps
 		fps.Update();	//çXêV
